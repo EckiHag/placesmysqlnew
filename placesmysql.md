@@ -46,8 +46,24 @@ export default nextConfig
 13. In CardPlace: img src={`https://beihaggis.de/${place.image.replace(/^\.\//, "/")}`} alt="Bild"
 14. In CardPic: Image src={`https://beihaggis.de/${image.replace(/^\.\//, "/")}`}
 
-Git
+# Git
+
 Zunächt braucht es eine Initialisierung im neuen Projekt 15. Comand Palette: Git Rename branch -> maineck
+u behind file = untracked + clicken -> a = added to repository
+Message: Commit vor Erstinstallation bei vercel
+stage all files = alle Dateien bereitstellen
+commit = begehen, übergeben, verpflichten
+
+anlegen eines neuen repositorys (placesmyslnew) bei github und hochladen im trminal local durch ausführen der drei angegebenen befehle:
+
+1.  git remote add origin https://github.com/EckiHag/placesmysqlnew.git
+2.  git branch -M main
+3.  git push -u origin main
+    die Dateien liegen bei github
+    link auf github Vercel Platform folgen und bei Vercel wird sofort die Veröffentlichung von placesmysql angeboten
+    dann import und folgen der gegebenen Möglichkeiten bei vercel
+    Fehler beim building insbesonder rot mit prisma -> inspect deployment -> build failed
+    Ich füge folgende Zeile in package.json hinzu: "build": "prisma generate && next build",
 
 # 30.4.24 Neuinstallation von xampp (in Berlin nach Neustart)
 
